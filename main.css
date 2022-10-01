@@ -1,0 +1,119 @@
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .quiz-app {
+        margin: 20px auto;
+        background-color: rgb(241, 241, 241);
+        padding: 10px;
+        width: 900px;
+    }
+    
+    .quiz-info {
+        display: flex;
+        background-color: white;
+        justify-content: space-between;
+        padding: 15px;
+    }
+    
+    .quiz-question {
+        background-color: white;
+        padding: 10px;
+        margin-top: 15px;
+    }
+    
+    .answer .an {
+        border-bottom: 1px solid rgb(155, 151, 151);
+    }
+    
+    .answer .an input[type="Radio"]:checked+label {
+        color: rgb(81, 81, 253);
+    }
+    
+    .answer .an {
+        cursor: pointer;
+        background-color: white;
+        padding: 15px;
+        margin-top: 10px;
+        font-weight: bold;
+        font-size: 16px;
+        color: #656565;
+        position: relative;
+        top: -5;
+    }
+    
+    .quiz-app .submit-button {
+        width: 100%;
+        background-color: rgb(81, 81, 253);
+        text-align: center;
+        font-weight: bold;
+        padding: 10px;
+        font-size: 18px;
+        color: white;
+        margin: 10px auto;
+        cursor: pointer;
+        display: block;
+    }
+    
+    .quiz-app .submit-button:focus {
+        outline: none;
+    }
+    
+    .quiz-app .quiz-count {
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+        padding: 15px;
+    }
+    
+    .quiz-app .quiz-count .spans {
+        flex: 1;
+        display: flex;
+    }
+    
+    .quiz-app .quiz-count .spans span {
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+        border-radius: 50%;
+        background-color: #ddd;
+    }
+    
+    .quiz-app .quiz-count .spans span.on {
+        background-color: rgb(81, 81, 253);
+    }
+    
+    .quiz-app .eval {
+        padding: 15px;
+        text-align: center;
+    }
+    
+    .eval .good {
+        font-weight: bold;
+        font-size: 30px;
+        color: #d84277;
+    }
+    
+    .eval .perfect {
+        font-weight: bold;
+        font-size: 30px;
+        color: aqua;
+    }
+    
+    .eval .bad {
+        font-weight: bold;
+        font-size: 30px;
+        color: rgb(255, 0, 0);
+    }
+    @media(max-width:767px){
+        .quiz-app {
+            margin: 20px auto;
+            background-color: rgb(241, 241, 241);
+            padding: 10px;
+            width: 100%;
+        }
+    }
